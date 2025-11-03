@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма реєстрації</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+      width: 100%;
+      max-width: 420px;
+      border: 2px solid #f48fb1;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 25px;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1.5px solid #f48fb1;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      border-color: #ec407a;
+      box-shadow: 0 0 6px rgba(236, 64, 122, 0.4);
+      outline: none;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 6px;
+      accent-color: #ec407a;
+    }
+
+    p {
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    label[for="privacy"] {
+      font-weight: 400;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #d81b60;
+      transform: scale(1.03);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <h1>Реєстрація користувача</h1>
+
+    <label for="name">Повне ім’я:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm">Підтвердження пароля:</label>
+    <input type="password" id="confirm" name="confirm" required>
+
+    <p>Стать:</p>
+    <label><input type="radio" name="gender" value="male" required> Чоловіча</label>
+    <label><input type="radio" name="gender" value="female"> Жіноча</label>
+
+    <label for="course">Курс:</label>
+    <select id="course" name="course" required>
+      <option value="">Оберіть курс</option>
+      <option value="front">Front-End</option>
+      <option value="back">Back-End</option>
+      <option value="pm">Project Management</option>
+      <option value="qa">QA Manual</option>
+    </select>
+
+    <label for="address">Адреса проживання:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="privacy">
+      <input type="checkbox" id="privacy" name="privacy" required>
+      Погоджуюсь з умовами конфіденційності
+    </label>
+
+    <button type="submit">Зареєструватись</button>
+  </form>
+</body>
+</html>
