@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Альона — Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Невеликий стиль для читабельності (не обов'язково) -->
+  <style>
+    body {max-width: 980px; margin: 0 auto; padding: 24px; line-height: 1.6; font-family: system-ui, -apple-system, Arial, sans-serif;}
+    header, nav, main, footer {margin-bottom: 24px;}
+    nav a {margin-right: 12px;}
+    section {margin: 32px 0;}
+    figure {max-width: 260px; margin: 0;}
+    img {max-width: 100%; height: auto; display: block; border-radius: 8px;}
+    .grid {display: grid; grid-template-columns: 1fr 2fr; gap: 24px; align-items: start;}
+    .card {border: 1px solid #5b1236ff; border-radius: 8px; padding: 16px;}
+    .back-to-top {display: inline-block; margin-top: 16px;}
+    code {background: #e4a54755; padding: 2px 6px; border-radius: 4px;}
+  </style>
+</head>
+<body>
+
+  <!-- Шапка + навігація з якорями -->
+  <header>
+    <h1>Альона — Frontend Developer</h1>
+    <nav aria-label="Основна навігація">
+      <a href="#about">Про мене</a>
+      <a href="#skills">Навички</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ПРО МЕНЕ -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="grid">
+        <figure>
+          <!-- поклади своє фото у папку img та заміни назву файлу -->
+          <img src="img/photo.jpg" alt="Фото Альони" />
+          <figcaption>Моє фото</figcaption>
+        </figure>
+
+        <article class="card">
+          <h2 id="about-title">Про мене</h2>
+          <p>
+            Я навчаюсь фронтенду в Beetroot Academy. Люблю верстку, чисту семантику HTML і акуратний CSS.
+            Шукаю можливості для стажування та практики.
+          </p>
+          <p>
+            Мої інтереси: веб-доступність, навчальні проєкти, невеликі лендінги.
+          </p>
+          <!-- приклад внутрішнього посилання-якоря до іншої секції -->
+          <p><a href="#projects">Перейти до проєктів →</a></p>
+        </article>
+      </div>
+      <a class="back-to-top" href="#top">↑ До початку сторінки</a>
+    </section>
+
+    <!-- НАВИЧКИ -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Навички</h2>
+      <article>
+        <h3>Технології</h3>
+        <ul>
+          <li>HTML5 (семантична розмітка: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+          <li>CSS3 (Flex/Grid, адаптивність)</li>
+          <li>Базовий JavaScript (DOM, події)</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Інше</h3>
+        <ul>
+          <li>Git та GitHub</li>
+          <li>Робота з макетами Figma</li>
+          <li>Основи доступності (alt-тексти, контрасти)</li>
+        </ul>
+      </article>
+      <a class="back-to-top" href="#top">↑ До початку сторінки</a>
+    </section>
+
+    <!-- ПРОЄКТИ з посиланнями назовні -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Проєкти</h2>
+
+      <article class="card">
+        <h3>Візитка-резюме</h3>
+        <p>Cторінка з контактами й досвідом.</p>
+        <p>
+          <!-- приклад зовнішнього посилання -->
+          <li><a href="https://alona-zhdanii.github.io/html-projekt/" target="_blank">Моя візитка на GitHub Pages</a></li>
+  </ul>
+          <li><a href="https://github.com/alona-zhdanii/resume/" target="_blank">Моє резюме на GitHub Pages</a></li>
+        <!-- приклад якірного посилання на секцію цієї ж сторінки -->
+      </article>
+
+      <article class="card">
+        <h3>Міні-лендінг</h3>
+        <p>Адаптивний лендінг із застосуванням CSS Grid та Flexbox.</p>
+      </article>
+
+      <a class="back-to-top" href="#top">↑ До початку сторінки</a>
+    </section>
+<section id="contacts">
+  <h2>Контакти</h2>
+  <ul>
+    <li>💬 Telegram: <a href="https://t.me/zhdanii_a" target="_blank">@zhdanii_a</a></li>
+    <li>📸 Instagram: <a href="https://instagram.com/alona_zhdanii" target="_blank">@alona_zhdanii</a></li>
+    <li>💻 GitHub: <a href="https://github.com/alona-zhdanii" target="_blank">alona-zhdanii</a></li>
+  </ul>
+</section>
