@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+section, header {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 940px;
+  display: block;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #070707;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Секції /
+section {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/ Заголовки /
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #070707;
+}
+
+/ Фото-блоки /
+img {
+  width: 100%;
+  max-width: 940px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/ Чергування фону /
+section:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+
+/ Навігація (якщо додаси пізніше) */
+nav {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #070707;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
